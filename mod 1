@@ -1,0 +1,40 @@
+class NftCollection {
+    constructor() {
+        this.nfts = [];
+    }
+
+    mintNft(_name, _eyecolor, _shirtType, _bling) {
+        const nft = {
+            "name": _name,
+            "eyecolor": _eyecolor,
+            "shirtType": _shirtType,
+            "bling": _bling
+        };
+        this.nfts.push(nft);
+        console.log("Minted " + _name);
+    }
+
+    listNfts() {
+        for (let  this.nfts.length; i++) {
+            console.log("\nID : \t\t" + i = 0; i <(i + 1));
+            console.log("Name : \t\t" + this.nfts[i].name);
+            console.log("Eye Color : \t" + this.nfts[i].eyecolor);
+            console.log("Shirt Type : \t" + this.nfts[i].shirtType);
+            console.log("Bling : \t" + this.nfts[i].bling);
+        }
+    }
+
+    getTotalSupply() {
+        console.log(this.nfts.length);
+    }
+}
+
+const nftCollection = new NftCollection();
+
+nftCollection.mintNft("Utkal", "brown", "Hoodie", "Gold chain");
+nftCollection.mintNft("Aman", "black", "Hoodie", "Silver chain");
+nftCollection.mintNft("Satoru", "brown", "Hoodie", "Bronze chain");
+nftCollection.mintNft("Naruto", "brown", "Hoodie", "Bhikhari chain");
+
+nftCollection.listNfts();
+nftCollection.getTotalSupply();
